@@ -1,5 +1,5 @@
 build:
   steps:
-    - pip install -r req.txt
+    - pip install -r requirements.txt
 
 start: python bot.py

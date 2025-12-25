@@ -1,5 +1,9 @@
-build:
-  steps:
-    - pip install -r requirements.txt
+buildScript
+    apt-get update && apt-get install -y curl
+    curl https://sh.rustup.rs -sSf | sh -s -- -y
+    export PATH="$HOME/.cargo/bin:$PATH"
+    pip install --upgrade pip
+    pip install -r requirements.txt
 
-start: python bot.py
+startCommand
+    python bot.py

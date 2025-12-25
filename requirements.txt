@@ -2,5 +2,5 @@ pip>=23.3
 setuptools>=68.0
 wheel
 aiohttp>=3.9.0,<4.0.0
-# aiogram==3.3.0
-aiofiles==22.1.0
+aiogram==3.3.0
+# aiofiles==22.1.0

@@ -1,9 +1,9 @@
 buildScript
-    apt-get update && apt-get install -y curl
-    curl https://sh.rustup.rs -sSf | sh -s -- -y
-    export PATH="$HOME/.cargo/bin:$PATH"
-    pip install --upgrade pip
-    pip install -r requirements.txt
+  apt-get update && apt-get install -y curl build-essential
+  curl https://sh.rustup.rs -sSf | sh -s -- -y
+  export PATH="$HOME/.cargo/bin:$PATH"
+  pip install --upgrade pip
+  pip install --no-cache-dir -r requirements.txt
 
 startCommand
-    python bot.py
+  python bot.py

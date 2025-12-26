@@ -2,6 +2,6 @@ services:
   - type: web
     name: kidsister_bot
     env: python
+    pythonVersion: 3.10.8
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    runtime: python-3.10.8
